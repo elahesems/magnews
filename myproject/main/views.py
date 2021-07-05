@@ -3,11 +3,13 @@ from .models import *
 
 # Create your views here.
 def home(request):
-    siteName = 'MySite | Home'
-    context = {'siteName':siteName}
+    # siteName = 'MySite | Home'
+    site = Main.objects.get(pk=2)
+    context = {'site':site}
     return render(request, 'front/home.html',context)
 
 def about(request):
-    siteName = 'MySite | about'
-    context = {'siteName':siteName}
+    site = Main.objects.get(pk=2)
+    # siteName = 'MySite | about'
+    context = {'site':site}
     return render(request, 'front/about.html',context)
