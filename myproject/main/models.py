@@ -8,5 +8,7 @@ class Main(models.Model):
     fb = models.URLField(blank=True,null=True)
     tw = models.URLField(blank=True,null=True)
     yt = models.URLField(blank=True,null=True)
+    tell = models.TextField(default="-")
+    link = models.TextField(default="-")
     def __str__(self):
         return self.name

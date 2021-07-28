@@ -89,7 +89,7 @@
 			<div class="wrap-header-mobile">
 				<!-- Logo moblie -->
 				<div class="logo-mobile">
-					<a href="index.html"><img src="{% static 'front/images/icons/logo-01.png' %}" alt="IMG-LOGO"></a>
+					<a href="{% url 'home' %}"><img src="{% static 'front/images/icons/logo-01.png' %}" alt="IMG-LOGO"></a>
 				</div>
 
 				<!-- Button show menu -->
@@ -160,11 +160,11 @@
 
 				<ul class="main-menu-m">
 					<li>
-						<a href="index.html">Home</a>
+						<a href="{% url 'home' %}">Home</a>
 						<ul class="sub-menu-m">
-							<li><a href="index.html">Homepage v1</a></li>
-							<li><a href="home-02.html">Homepage v2</a></li>
-							<li><a href="home-03.html">Homepage v3</a></li>
+							<li><a href="#">Homepage v1</a></li>
+							<li><a href="#">Homepage v2</a></li>
+							<li><a href="#">Homepage v3</a></li>
 						</ul>
 
 						<span class="arrow-main-menu-m">
@@ -221,7 +221,7 @@
 			<div class="wrap-logo no-banner container">
 				<!-- Logo desktop -->
 				<div class="logo">
-					<a href="index.html"><img src="{% static 'front/images/icons/logo-01.png' %}" alt="LOGO"></a>
+					<a href="{% url 'home' %}"><img src="{% static 'front/images/icons/logo-01.png' %}" alt="LOGO"></a>
 				</div>
 			</div>
 
@@ -230,17 +230,17 @@
 				<div class="main-nav">
 					<!-- Menu desktop -->
 					<nav class="menu-desktop">
-						<a class="logo-stick" href="index.html">
+						<a class="logo-stick" href="{% url 'home' %}">
 							<img src="{% static 'front/images/icons/logo-01.png' %}" alt="LOGO">
 						</a>
 
 						<ul class="main-menu justify-content-center">
 							<li class="main-menu-active">
-								<a href="index.html">Home</a>
+								<a href="{% url 'home' %}">Home</a>
 								<ul class="sub-menu">
-									<li><a href="index.html">Homepage v1</a></li>
-									<li><a href="home-02.html">Homepage v2</a></li>
-									<li><a href="home-03.html">Homepage v3</a></li>
+									<li><a href="#">Homepage v1</a></li>
+									<li><a href="#">Homepage v2</a></li>
+									<li><a href="#">Homepage v3</a></li>
 								</ul>
 							</li>
 
