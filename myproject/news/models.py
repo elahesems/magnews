@@ -7,7 +7,7 @@ class News(models.Model):
     short_txt = models.TextField()
     body_txt = models.TextField()
     date = models.CharField(max_length= 12)
-    pic = models.TextField()
+    pic = models.ImageField()
     writer = models.CharField(max_length=50)
 
     def __str__(self):
