@@ -779,8 +779,8 @@
                 <div class="col-sm-6 col-md-4">
                 <!-- Item latest -->
                 <div class="m-b-45">
-                    <a href="#" class="wrap-pic-w hov1 trans-03">
-                        <img src="{{ item.pic.url }}" alt="IMG">
+                    <a href="{% url 'news_detail' item.id %}" class="wrap-pic-w hov1 trans-03">
+                        <img src="{% static 'front/images/banner-01.jpg' %}" alt="IMG">
                     </a>
 
                     <div class="p-t-16">
