@@ -785,13 +785,13 @@
 
                     <div class="p-t-16">
                         <h5 class="p-b-5">
-                            <a href="#" class="f1-m-3 cl2 hov-cl10 trans-03">
+                            <a href="{% url 'news_detail' item.id %}" class="f1-m-3 cl2 hov-cl10 trans-03">
                                 {{ item.name }}
                             </a>
                         </h5>
 
                         <span class="cl8">
-                            <a href="#" class="f1-s-4 cl8 hov-cl10 trans-03">
+                            <a href="{% url 'news_detail' item.id %}" class="f1-s-4 cl8 hov-cl10 trans-03">
                                 by {{ item.writer }}
                             </a>
 

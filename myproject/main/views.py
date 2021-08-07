@@ -6,13 +6,13 @@ from .models import *
 # Create your views here.
 def home(request):
     # siteName = 'MySite | Home'
-    site = Main.objects.get(pk=2)
+    site = Main.objects.get(pk=3)
     news = News.objects.all()
     context = {'site':site, 'news':news}
     return render(request, 'front/home.html',context)
 
 def about(request):
-    site = Main.objects.get(pk=2)
+    site = Main.objects.get(pk=3)
     # siteName = 'MySite | about'
     context = {'site':site}
     return render(request, 'front/about.html',context)
